@@ -3,6 +3,9 @@ import 'package:meta/meta.dart';
 
 part 'counter_state.dart';
 
+//* here we create funtions that will apply changes on state
+//! this class will extend cubit State
+
 class CounterCubit extends Cubit<CounterState> {
   CounterCubit() : super(CounterState(counterValue: 0));
   void increament() => emit(
